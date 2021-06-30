@@ -1,0 +1,81 @@
+.chat {
+  display: flex;
+  flex-direction: column;
+  flex: 0.65;
+}
+
+.chat__header {
+  padding: 10px;
+  display: flex;
+  align-items: center;
+  border-bottom: 1px solid lightgray;
+}
+
+.chat__headerInfo {
+  flex: 1;
+  padding-left: 20px;
+}
+.chat__headerInfo > p {
+  font-weight: 100;
+}
+
+.chat__body {
+  flex: 1;
+  background-image: url('https://external-preview.redd.it/rEwFriCkfAtjOb5b-23b4tGGVcuvfaBqamYNJrgxnLM.png?width=700&auto=webp&s=b9cb52f0a75c14a2a4f0dda83382a525aea36b27');
+  background-repeat: repeat;
+  background-position: center;
+  padding: 30px;
+  overflow-y: scroll;
+  overflow-x: hidden;
+}
+
+.chat__message {
+  position: relative;
+  font-size: 16px;
+  padding: 10px;
+  width: fit-content;
+  border-radius: 10px;
+  background-color: #ffffff;
+  margin-bottom: 30px;
+}
+
+.chat__receiver {
+  margin-left: auto;
+  background-color: #dcf8c6;
+}
+
+.chat__timestamp {
+  margin-left: 10px;
+  font-size: xx-small;
+}
+
+.chat__name {
+  position: absolute;
+  top: -15px;
+  font-weight: 800;
+  font-size: xx-small;
+}
+
+.chat__footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 62px;
+  border-top: 1px solid lightgray;
+}
+
+.chat__footer > section {
+  flex: 1;
+  display: flex;
+  align-items: center;
+}
+
+.chat__footer > section > input {
+  flex: 1;
+  outline: none;
+  margin-left: 5px;
+  border-radius: 20px;
+  padding: 2px 5px;
+  height: 2rem;
+  border: none;
+}
